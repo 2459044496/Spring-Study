@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入util命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="emp" class="autowire.Emp" autowire="byType">
+        <!--手动装配
+        <property name="dept" ref="dept"></property>-->
+    </bean>
+
+    <bean id="dept" class="autowire.Dept">
+        <property name="dName" value="abc"></property>
+    </bean>
+
+</beans>

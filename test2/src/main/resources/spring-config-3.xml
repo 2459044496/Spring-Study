@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--注入属性 级联赋值方式1-->
+    <bean id="emp" class="cn.cuiper.spring.Emp">
+        <property name="eAge" value="18"></property>
+        <property name="eName" value="cuipai"></property>
+        <!--级联赋值-->
+        <property name="dept" ref="dept"></property>
+    </bean>
+
+    <bean id="dept" class="cn.cuiper.spring.Dept">
+        <property name="dName" value="BOSS"></property>
+    </bean>
+
+</beans>

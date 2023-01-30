@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1,set注入 setName = cuipai。。。-->
+    <!--<bean id="user" class="cn.cuiper.spring.User">
+        <property name="name" value="cuipai"></property>
+        <property name="age" value="18"></property>
+    </bean>-->
+
+    <!--2,有参构造函数。Java默认会有无参构造函数，如果新写了构造函数，默认的则会没有了-->
+<!--    <bean id="user" class="cn.cuiper.spring.User">
+        <constructor-arg name="name" value="cuipai"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+    </bean>-->
+
+    <!--3, p命名空间 简化set注入方式,了解
+    配置文件新增 xmlns:p="http://www.springframework.org/schema/p"
+    <bean id="user" class="cn.cuiper.spring.User" p:name="cuipai" p:age="18"></bean>-->
+
+    <!--4, 注入null值、特殊符号-->
+    <bean id="user" class="cn.cuiper.spring.User">
+        <property name="name">
+            <!--特殊符号
+            a, 使用转义字符 < 改为 &lt、  > 改为&gt 等。
+            b, 把特殊符号内容写到 CDATA; <![CDATA[这里写字符]]-->
+            <value><![CDATA[<<河南>>]]></value>
+        </property>
+        <property name="age">
+            <!--null值-->
+            <null></null> <!--或<null/>-->
+        </property>
+    </bean>
+
+
+</beans>

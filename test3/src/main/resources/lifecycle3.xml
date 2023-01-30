@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入util命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="lifeCycle3" class="lifecycle.lifecycle3.LifeCycle3"
+          init-method="initMethod" destroy-method="destroyMethod">
+        <property name="name" value="cui"></property>
+    </bean>
+
+    <bean id="lifeCycle3BeanNameAware" class="lifecycle.lifecycle3.LifeCycle3BeanNameAware"></bean>
+    <bean id="lifeCycle3BeanFactoryAware" class="lifecycle.lifecycle3.LifeCycle3BeanFactoryAware"></bean>
+    <bean id="lifeCycle3ApplicationContextAware" class="lifecycle.lifecycle3.LifeCycle3ApplicationContextAware"></bean>
+    <bean id="lifeCycle3BeanPostProcess" class="lifecycle.lifecycle3.LifeCycle3BeanPostProcess"></bean>
+
+</beans>

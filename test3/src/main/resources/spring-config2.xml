@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入util命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--公共集合 list类型，也可指定其它类型-->
+    <util:list id="depts">
+        <value>开发部</value>
+        <value>运维部</value>
+    </util:list>
+
+    <bean id="dept" class="Dept">
+        <!--导入公共集合-->
+        <property name="list" ref="depts"></property>
+    </bean>
+
+</beans>

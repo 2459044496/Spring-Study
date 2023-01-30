@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入context命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启组件扫描
+    1.多个包用","隔开
+    2.扫描包上层目录-->
+    <context:component-scan base-package="cn.cuiper.spring">
+    </context:component-scan>
+
+    <!--use-default-filters="false" 不使用Spring默认的扫描过滤器
+    include包含
+    exclude不包含-->
+<!--    <context:component-scan base-package="cn.cuiper.spring" use-default-filters="false">
+        &lt;!&ndash;只扫描@Service注解类&ndash;&gt;
+        <context:include-filter type="annotation"
+             expression="org.springframework.stereotype.Service"/>
+
+        &lt;!&ndash;不扫描@Controller注解类&ndash;&gt;
+        <context:exclude-filter type="annotation"
+             expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>-->
+</beans>

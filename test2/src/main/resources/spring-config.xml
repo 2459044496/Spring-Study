@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--注入属性，外部bean-->
+    <bean id="userServiceImpl" class="cn.cuiper.spring.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+    <!--这里可以随时修改实现类，低耦合，方便-->
+    <bean id="userDao" class="cn.cuiper.spring.dao.UserDao2Impl"></bean>
+
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入util命名空间-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="lifeCycle2" class="lifecycle.lifecycle2.LifeCycle2"
+          init-method="initMethod" destroy-method="destroyMethod">
+        <property name="name" value="cui"></property>
+    </bean>
+
+    <bean id="lifeCycle2BeanPostProcess" class="lifecycle.lifecycle2.LifeCycle2BeanPostProcess"></bean>
+</beans>
