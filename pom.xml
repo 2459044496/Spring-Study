@@ -14,6 +14,7 @@
         <module>test3</module>
         <module>test4-use-annotation</module>
         <module>test5-aop</module>
+        <module>test6-jdbc-template</module>
     </modules>
 
     <dependencies>
