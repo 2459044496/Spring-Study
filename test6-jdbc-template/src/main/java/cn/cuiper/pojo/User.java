@@ -1,4 +1,4 @@
-package cn.cuiper.projo;
+package cn.cuiper.pojo;
 
 import lombok.Data;
 
