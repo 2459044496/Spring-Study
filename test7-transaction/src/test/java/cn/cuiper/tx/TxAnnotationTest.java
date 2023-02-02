@@ -20,4 +20,11 @@ public class TxAnnotationTest {
         userService.addMoney(100);
     }
 
+    @Test
+    // 测试声明式事务
+    public void test2() {
+        // userService.testPlatformTransactionManager();
+        userService.testTransactionTemplate();
+    }
+
 }
