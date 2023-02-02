@@ -7,4 +7,6 @@ public interface UserService {
 
     public Boolean addMoney(int addMoney);
 
+    public void testPlatformTransactionManager();
+    public void testTransactionTemplate();
 }

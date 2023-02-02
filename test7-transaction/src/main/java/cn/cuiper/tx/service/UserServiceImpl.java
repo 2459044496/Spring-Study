@@ -14,4 +14,14 @@ public class UserServiceImpl implements UserService{
     public Boolean addMoney(int addMoney) {
         return userDao.addMoney(addMoney);
     }
+
+    @Override
+    public void testPlatformTransactionManager() {
+        userDao.testPlatformTransactionManager();
+    }
+
+    @Override
+    public void testTransactionTemplate() {
+        userDao.testTransactionTemplate();
+    }
 }
