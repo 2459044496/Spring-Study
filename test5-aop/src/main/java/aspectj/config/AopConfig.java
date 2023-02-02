@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 
-@Aspect// 使用Aspect
+@Aspect// 使用Aspect  @Aspect注解将类声明为切面
 @Configuration
 @Order(1)// 设置切面优先级，数字低优先级高
 public class AopConfig {

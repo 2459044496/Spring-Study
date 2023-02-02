@@ -15,9 +15,33 @@
         <module>test4-use-annotation</module>
         <module>test5-aop</module>
         <module>test6-jdbc-template</module>
+        <module>test7-transaction</module>
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.20</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.2.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>4.2.5.RELEASE</version>
+        </dependency>
+
         <!--使用aspectj做织入点，不使用AOP-->
         <dependency>
             <groupId>org.aspectj</groupId>
