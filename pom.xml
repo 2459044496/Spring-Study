@@ -16,6 +16,7 @@
         <module>test5-aop</module>
         <module>test6-jdbc-template</module>
         <module>test7-transaction</module>
+        <module>test8-new-features</module>
     </modules>
 
     <dependencies>
