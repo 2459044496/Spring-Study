@@ -18,6 +18,7 @@
         <module>test7-transaction</module>
         <module>test8-new-features</module>
         <module>test9-component-registry</module>
+        <module>test10-life-cycle</module>
     </modules>
 
     <dependencies>
