@@ -5,7 +5,10 @@ import cn.cuiper.service.PersonService;
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Service;
 
-@Service
-@Import({User.class})
 public class PersonServiceImpl implements PersonService {
+
+    @Override
+    public void say() {
+        System.out.println("say hello");
+    }
 }
