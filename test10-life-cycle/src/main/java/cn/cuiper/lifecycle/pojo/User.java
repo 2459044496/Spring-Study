@@ -48,6 +48,7 @@ public class User implements InitializingBean, DisposableBean {
     }
 
     @PostConstruct// JSR250注解
+    // CommonAnnotationBeanPostProcessor和InitDestroyAnnotationBeanPostProcessor实现
     public void postConstruct() {
         System.out.println("执行java @PostConstruct注解方法");
     }
