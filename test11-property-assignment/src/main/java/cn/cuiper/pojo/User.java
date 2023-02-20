@@ -18,7 +18,7 @@ public class User {
     private String pwd;
 
     // : 如果找不到配置，则使用:后的值。如果没有默认值为对应的表达式，本例为${user.null}
-    @Value("${user.null:IAMNULL}")
+    @Value("${user.null:I AM NULL}")
     private String testNull;
 
     // SpEL表达式

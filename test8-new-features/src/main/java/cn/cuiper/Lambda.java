@@ -3,7 +3,7 @@ package cn.cuiper;
 import org.springframework.context.support.GenericApplicationContext;
 
 // 函数式风格编程
-public class Lamda {
+public class Lambda {
 
     public static void main(String[] args) {
         // 1.创建对象
